@@ -11,3 +11,20 @@ forma formatada no console, no padrão "propriedade: valor", sem saber previamen
 os nomes das propriedades.
 
 */
+
+const LivrosDetalhes = {
+    titulo: "harry potter e a pedra filosofal",
+    autor: "J.K. Rowling",
+    ano: 1997,
+    editora: "Rocco",
+    genero: "Fantasia",
+    paginas: 223
+}
+
+
+for (let propriedade in LivrosDetalhes){
+    console.log(
+        propriedade /*acessa o nome da propriedade do objeto, ex: titulo*/,":", 
+        LivrosDetalhes[propriedade]/*acessa o valor da propriedade do objeto, ex: harry potter e a pedra filosofal*/
+    ); 
+}

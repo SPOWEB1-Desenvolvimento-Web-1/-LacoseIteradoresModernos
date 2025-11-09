@@ -11,3 +11,22 @@ número total de produtos que estão com a quantidade abaixo desse mínimo.
 */ 
 
 
+const valorminimo = 5;
+
+const produtos = [
+    { nome: "Macarrão", quantidade: 10},
+    { nome: "Arroz", quantidade: 1},
+    { nome: "Feijão", quantidade: 2},
+    { nome: "Açúcar", quantidade: 7},
+    { nome: "Bolacha Maizena", quantidade: 5}
+]
+
+for (let produto of produtos){
+    if (produto.quantidade < valorminimo){
+        console.log(
+            produto.nome, /* ex: Macarrão*/ 
+            "está com o estoque baixo \n Quantidade atual:", 
+            produto.quantidade /* ex: 10*/ 
+        );
+    }
+}
